@@ -199,7 +199,7 @@ U 1 1 5DCDB777
 P 8850 3550
 F 0 "U4" H 8800 1961 50  0000 C CNN
 F 1 "STM32F103C8Tx" H 8800 1870 50  0000 C CNN
-F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 8250 2150 50  0001 R CNN
+F 2 "STM32F103C8T6:QFP50P900X900X160-48N" H 8250 2150 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 8850 3550 50  0001 C CNN
 	1    8850 3550
 	1    0    0    -1  
