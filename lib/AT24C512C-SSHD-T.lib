@@ -1,0 +1,34 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# AT24C512C-SSHD-T
+#
+DEF AT24C512C-SSHD-T U 0 40 Y Y 1 L N
+F0 "U" -211 587 50 H V L BNN
+F1 "AT24C512C-SSHD-T" -180 -987 50 H V L BNN
+F2 "SOIC127P600X175-8N" 0 0 50 H I L BNN
+F3 "AT24C512C Series 512 Kb _64 K x 8_ 1.7 V I2C-Compatible Serial EEPROM - SOIC-8" 0 0 50 H I L BNN
+F4 "Microchip" 0 0 50 H I L BNN
+F5 "Unavailable" 0 0 50 H I L BNN
+F6 "None" 0 0 50 H I L BNN
+F7 "AT24C512C-SSHD-T" 0 0 50 H I L BNN
+F8 "SOIC-8 Atmel" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 16 -500 500 -500 -800 N
+P 2 0 0 16 -500 -800 500 -800 N
+P 2 0 0 16 500 -800 500 500 N
+P 2 0 0 16 500 500 -500 500 N
+X VCC 8 -700 300 200 R 40 40 0 0 W 
+X A0 1 -700 100 200 R 40 40 0 0 I 
+X A1 2 -700 0 200 R 40 40 0 0 I 
+X A2 3 -700 -100 200 R 40 40 0 0 I 
+X SCL 6 -700 -300 200 R 40 40 0 0 I 
+X WP 7 -700 -400 200 R 40 40 0 0 I 
+X GND 4 -700 -600 200 R 40 40 0 0 P 
+X SDA 5 700 300 200 L 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library
