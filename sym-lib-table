@@ -1,5 +1,4 @@
 (sym_lib_table
-  (lib (name STM32F103C8T6)(type Legacy)(uri ${KIPRJMOD}/lib/STM32F103C8T6.lib)(options "")(descr ""))
-  (lib (name DS3231)(type Legacy)(uri ${KIPRJMOD}/lib/DS3231.lib)(options "")(descr "")(disabled))
+  (lib (name DS3231)(type Legacy)(uri ${KIPRJMOD}/lib/DS3231.lib)(options "")(descr ""))
   (lib (name AT24C512C-SSHD-T)(type Legacy)(uri ${KIPRJMOD}/lib/AT24C512C-SSHD-T.lib)(options "")(descr ""))
 )
