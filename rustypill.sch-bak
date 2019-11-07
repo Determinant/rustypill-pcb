@@ -845,10 +845,7 @@ F 3 "~" H 10500 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 4150 10500 4150
-Wire Wire Line
 	10500 4150 10500 3950
-Connection ~ 10500 4150
 Wire Wire Line
 	10500 4150 10600 4150
 $Comp
@@ -1610,5 +1607,6 @@ Connection ~ 2750 6450
 Wire Wire Line
 	2750 6450 2800 6450
 Wire Wire Line
-	9450 4150 9500 4150
+	9450 4150 10500 4150
+Connection ~ 10500 4150
 $EndSCHEMATC

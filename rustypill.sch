@@ -193,17 +193,6 @@ F 3 "~" H 6050 7350 50  0001 C CNN
 	1    6050 7350
 	0    1    1    0   
 $EndComp
-$Comp
-L MCU_ST_STM32F1:STM32F103C8Tx U4
-U 1 1 5DCDB777
-P 8850 3550
-F 0 "U4" H 8800 1961 50  0000 C CNN
-F 1 "STM32F103C8Tx" H 8800 1870 50  0000 C CNN
-F 2 "STM32F103C8T6:QFP50P900X900X160-48N" H 8250 2150 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 8850 3550 50  0001 C CNN
-	1    8850 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8750 2050 8750 1950
 Wire Wire Line
@@ -845,10 +834,7 @@ F 3 "~" H 10500 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 4150 10500 4150
-Wire Wire Line
 	10500 4150 10500 3950
-Connection ~ 10500 4150
 Wire Wire Line
 	10500 4150 10600 4150
 $Comp
@@ -1561,8 +1547,6 @@ $EndComp
 Wire Wire Line
 	9450 4450 10150 4450
 Wire Wire Line
-	9450 4550 10150 4550
-Wire Wire Line
 	10350 4450 10600 4450
 Wire Wire Line
 	10350 4550 10400 4550
@@ -1610,5 +1594,19 @@ Connection ~ 2750 6450
 Wire Wire Line
 	2750 6450 2800 6450
 Wire Wire Line
-	9450 4150 9500 4150
+	9450 4150 10500 4150
+Connection ~ 10500 4150
+$Comp
+L MCU_ST_STM32F1:STM32F103C8Tx U4
+U 1 1 5DCDB777
+P 8850 3550
+F 0 "U4" H 8800 1961 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 8800 1870 50  0000 C CNN
+F 2 "STM32F103C8T6:QFP50P900X900X160-48N" H 8250 2150 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 8850 3550 50  0001 C CNN
+	1    8850 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 4550 10150 4550
 $EndSCHEMATC
