@@ -18,6 +18,7 @@ Features
 PCB
 ===
 
-.. image:: https://raw.githubusercontent.com/Determinant/rustypill/master/pcb-top.png
+.. image:: https://github.com/Determinant/rustypill/raw/master/pcb-top.png
 
-.. image:: https://raw.githubusercontent.com/Determinant/rustypill/master/pcb-bottom.png
+.. image:: https://github.com/Determinant/rustypill/raw/master/pcb-bottom.png
+
