@@ -1,4 +1,4 @@
-713971921368059
+717139792465059
 AT24C512C-SSHD-T
 SOIC127P600X175-8N
 
@@ -53626,3 +53626,17 @@ Surface mounted pin header SMD 2x40 2.54mm double row
 0
 80
 80
+lib
+SSD1306_OLED-0.91-128x32
+
+
+0
+14
+14
+lib
+my3034_holder
+Keystone 3034 SMD battery holder for 2020, 2025 and 2032 coincell batteries. http://www.keyelco.com/product-pdf.cfm?p=798
+Keystone type 3034 coin cell retainer
+0
+3
+2

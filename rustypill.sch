@@ -37,17 +37,6 @@ F 3 "~" H 4700 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RF_Module:ESP-12F U3
-U 1 1 5DC17685
-P 5350 1750
-F 0 "U3" H 5350 2731 50  0000 C CNN
-F 1 "ESP-12F" H 5550 2500 50  0000 C CNN
-F 2 "RF_Modules:ESP-12E" H 5350 1750 50  0001 C CNN
-F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 5000 1850 50  0001 C CNN
-	1    5350 1750
-	1    0    0    -1  
-$EndComp
-$Comp
 L DS3231:DS3231 IC1
 U 1 1 5DC2219D
 P 4750 4050
@@ -85,7 +74,7 @@ U 1 1 5DC29EDF
 P 5700 4200
 F 0 "BT1" H 5818 4296 50  0000 L CNN
 F 1 "CR" H 5818 4205 50  0000 L CNN
-F 2 "Connectors:CR2032H" V 5700 4260 50  0001 C CNN
+F 2 "lib:my3034_holder" V 5700 4260 50  0001 C CNN
 F 3 "~" V 5700 4260 50  0001 C CNN
 	1    5700 4200
 	1    0    0    -1  
@@ -377,7 +366,7 @@ U 1 1 5DD4F649
 P 7750 2650
 F 0 "Y1" H 7750 2750 50  0000 C CNN
 F 1 "8MHz" H 7750 2500 50  0000 C CNN
-F 2 "Oscillators:Oscillator_SMD_Abracon_ASE-4pin_3.2x2.5mm_HandSoldering" H 7750 2650 50  0001 C CNN
+F 2 "Crystals:Crystal_SMD_5032-2pin_5.0x3.2mm_HandSoldering" H 7750 2650 50  0001 C CNN
 F 3 "~" H 7750 2650 50  0001 C CNN
 	1    7750 2650
 	1    0    0    -1  
@@ -973,16 +962,9 @@ $EndComp
 Wire Wire Line
 	4800 2550 4700 2550
 Wire Wire Line
-	6400 900  6400 1150
-Wire Wire Line
 	5350 900  6050 900 
 Wire Wire Line
 	6250 900  6400 900 
-Wire Wire Line
-	5950 1150 6400 1150
-Connection ~ 6400 1150
-Wire Wire Line
-	6400 1150 6400 1350
 Wire Wire Line
 	5950 1350 6400 1350
 $Comp
@@ -1075,12 +1057,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5E6D49A8
-P 2200 5450
-F 0 "J2" H 2280 5442 50  0000 L CNN
-F 1 "PROG" H 2280 5351 50  0000 L CNN
-F 2 "lib:PinHeader_1x04_P2.54mm_Horizontal" H 2200 5450 50  0001 C CNN
-F 3 "~" H 2200 5450 50  0001 C CNN
-	1    2200 5450
+P 2200 5250
+F 0 "J2" H 2280 5242 50  0000 L CNN
+F 1 "PROG" H 2280 5151 50  0000 L CNN
+F 2 "lib:PinHeader_1x04_P2.54mm_Horizontal" H 2200 5250 50  0001 C CNN
+F 3 "~" H 2200 5250 50  0001 C CNN
+	1    2200 5250
 	1    0    0    -1  
 $EndComp
 Text GLabel 9800 4650 2    50   Input ~ 0
@@ -1094,33 +1076,33 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0104
 U 1 1 5E6F9C97
-P 2000 5350
-F 0 "#PWR0104" H 2000 5200 50  0001 C CNN
-F 1 "+3.3V" V 2015 5478 50  0000 L CNN
-F 2 "" H 2000 5350 50  0001 C CNN
-F 3 "" H 2000 5350 50  0001 C CNN
-	1    2000 5350
+P 2000 5150
+F 0 "#PWR0104" H 2000 5000 50  0001 C CNN
+F 1 "+3.3V" V 2015 5278 50  0000 L CNN
+F 2 "" H 2000 5150 50  0001 C CNN
+F 3 "" H 2000 5150 50  0001 C CNN
+	1    2000 5150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5E6FA9FA
-P 2000 5650
-F 0 "#PWR0105" H 2000 5400 50  0001 C CNN
-F 1 "GND" V 2005 5522 50  0000 R CNN
-F 2 "" H 2000 5650 50  0001 C CNN
-F 3 "" H 2000 5650 50  0001 C CNN
-	1    2000 5650
+P 2000 5450
+F 0 "#PWR0105" H 2000 5200 50  0001 C CNN
+F 1 "GND" V 2005 5322 50  0000 R CNN
+F 2 "" H 2000 5450 50  0001 C CNN
+F 3 "" H 2000 5450 50  0001 C CNN
+	1    2000 5450
 	0    1    1    0   
 $EndComp
-Text GLabel 1900 5450 0    50   Input ~ 0
+Text GLabel 1900 5250 0    50   Input ~ 0
 SW_DIO
 Wire Wire Line
-	1900 5450 2000 5450
-Text GLabel 1900 5550 0    50   Input ~ 0
+	1900 5250 2000 5250
+Text GLabel 1900 5350 0    50   Input ~ 0
 SW_DCLK
 Wire Wire Line
-	1900 5550 2000 5550
+	1900 5350 2000 5350
 Wire Wire Line
 	8100 2950 8150 2950
 Wire Wire Line
@@ -1159,8 +1141,6 @@ NoConn ~ 5950 2150
 NoConn ~ 5950 1950
 NoConn ~ 5950 1850
 NoConn ~ 5950 1750
-NoConn ~ 5950 1650
-NoConn ~ 5950 1550
 $Comp
 L Connector_Generic:Conn_01x16 J3
 U 1 1 5E95FD9A
@@ -1484,53 +1464,30 @@ Wire Wire Line
 	7800 3750 8150 3750
 Wire Wire Line
 	7800 3650 8150 3650
-$Comp
-L Connector_Generic:Conn_02x05_Top_Bottom J6
-U 1 1 5DF7B1BC
-P 3400 5800
-F 0 "J6" H 3450 5375 50  0000 C CNN
-F 1 "IDC_10P" H 3450 5466 50  0000 C CNN
-F 2 "lib:IDC-Header_2x05_P2.54mm_Vertical" H 3400 5800 50  0001 C CNN
-F 3 "~" H 3400 5800 50  0001 C CNN
-	1    3400 5800
-	-1   0    0    1   
-$EndComp
-Text GLabel 3600 6000 2    50   Input ~ 0
+Text GLabel 3500 5600 2    50   Input ~ 0
 A0
-Text GLabel 3600 5900 2    50   Input ~ 0
-A1
-Text GLabel 3600 5800 2    50   Input ~ 0
-A2
-Text GLabel 3600 5700 2    50   Input ~ 0
-A3
-Text GLabel 3100 6000 0    50   Input ~ 0
+Text GLabel 3000 5600 0    50   Input ~ 0
 A4
-Text GLabel 3100 5900 0    50   Input ~ 0
-A5
-Text GLabel 3100 5800 0    50   Input ~ 0
-A6
-Text GLabel 3100 5700 0    50   Input ~ 0
-A7
 $Comp
 L power:VPP #PWR021
 U 1 1 5DF905F6
-P 3600 5600
-F 0 "#PWR021" H 3600 5450 50  0001 C CNN
-F 1 "VPP" V 3615 5728 50  0000 L CNN
-F 2 "" H 3600 5600 50  0001 C CNN
-F 3 "" H 3600 5600 50  0001 C CNN
-	1    3600 5600
+P 3500 5500
+F 0 "#PWR021" H 3500 5350 50  0001 C CNN
+F 1 "VPP" V 3515 5628 50  0000 L CNN
+F 2 "" H 3500 5500 50  0001 C CNN
+F 3 "" H 3500 5500 50  0001 C CNN
+	1    3500 5500
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5DF92D64
-P 3100 5600
-F 0 "#PWR01" H 3100 5350 50  0001 C CNN
-F 1 "GND" V 3105 5472 50  0000 R CNN
-F 2 "" H 3100 5600 50  0001 C CNN
-F 3 "" H 3100 5600 50  0001 C CNN
-	1    3100 5600
+P 3000 5500
+F 0 "#PWR01" H 3000 5250 50  0001 C CNN
+F 1 "GND" V 3005 5372 50  0000 R CNN
+F 2 "" H 3000 5500 50  0001 C CNN
+F 3 "" H 3000 5500 50  0001 C CNN
+	1    3000 5500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1609,4 +1566,96 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 $EndComp
 Wire Wire Line
 	9450 4550 10150 4550
+Text GLabel 6500 1650 2    50   Input ~ 0
+I2C1_SCL
+$Comp
+L RF_Module:ESP-12F U3
+U 1 1 5DC17685
+P 5350 1750
+F 0 "U3" H 5350 2731 50  0000 C CNN
+F 1 "ESP-12F" H 5550 2500 50  0000 C CNN
+F 2 "RF_Modules:ESP-12E" H 5350 1750 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 5000 1850 50  0001 C CNN
+	1    5350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1650 5950 1650
+Text GLabel 6500 1550 2    50   Input ~ 0
+I2C1_SDA
+Wire Wire Line
+	6500 1550 5950 1550
+Text GLabel 8400 1850 2    50   Input ~ 0
+IC_RST
+Wire Wire Line
+	8400 1850 8300 1850
+Wire Wire Line
+	8300 1850 8300 1700
+Connection ~ 8300 1700
+Text GLabel 6500 1150 2    50   Input ~ 0
+IC_RST
+Wire Wire Line
+	6400 900  6400 1350
+Wire Wire Line
+	6500 1150 5950 1150
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J6
+U 1 1 5DE1718D
+P 3200 5700
+F 0 "J6" H 3250 6117 50  0000 C CNN
+F 1 "IDC_10P" H 3250 6026 50  0000 C CNN
+F 2 "lib:IDC-Header_2x05_P2.54mm_Vertical" H 3200 5700 50  0001 C CNN
+F 3 "~" H 3200 5700 50  0001 C CNN
+	1    3200 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 5900 0    50   Input ~ 0
+A7
+Text GLabel 3000 5800 0    50   Input ~ 0
+A6
+Text GLabel 3000 5700 0    50   Input ~ 0
+A5
+Text GLabel 3500 5900 2    50   Input ~ 0
+A3
+Text GLabel 3500 5800 2    50   Input ~ 0
+A2
+Text GLabel 3500 5700 2    50   Input ~ 0
+A1
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 5DED0768
+P 2200 5750
+F 0 "J7" H 2280 5742 50  0000 L CNN
+F 1 "I2C" H 2280 5651 50  0000 L CNN
+F 2 "lib:PinHeader_1x04_P2.54mm_Vertical" H 2200 5750 50  0001 C CNN
+F 3 "~" H 2200 5750 50  0001 C CNN
+	1    2200 5750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 5750 0    50   Input ~ 0
+I2C1_SCL
+Text GLabel 2000 5650 0    50   Input ~ 0
+I2C1_SDA
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5DEFC130
+P 2000 5850
+F 0 "#PWR0109" H 2000 5700 50  0001 C CNN
+F 1 "+3.3V" V 2015 5978 50  0000 L CNN
+F 2 "" H 2000 5850 50  0001 C CNN
+F 3 "" H 2000 5850 50  0001 C CNN
+	1    2000 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5DEFDB77
+P 2000 5950
+F 0 "#PWR0110" H 2000 5700 50  0001 C CNN
+F 1 "GND" V 2005 5822 50  0000 R CNN
+F 2 "" H 2000 5950 50  0001 C CNN
+F 3 "" H 2000 5950 50  0001 C CNN
+	1    2000 5950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
