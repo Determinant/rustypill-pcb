@@ -1,4 +1,4 @@
-717139792465059
+720299170817059
 AT24C512C-SSHD-T
 SOIC127P600X175-8N
 
@@ -51072,6 +51072,13 @@ SolderWirePad_single_SMD_5x10mm
 0
 0
 lib
+473340001
+47334-0001-2
+Connector
+0
+12
+12
+lib
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
 Bulgin BX0036
@@ -53633,6 +53640,13 @@ SSD1306_OLED-0.91-128x32
 0
 14
 14
+lib
+VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm
+VQFN, 16 Pin (http://www.ti.com/lit/ds/symlink/tlv62095.pdf), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+VQFN DFN_QFN
+0
+21
+17
 lib
 my3034_holder
 Keystone 3034 SMD battery holder for 2020, 2025 and 2032 coincell batteries. http://www.keyelco.com/product-pdf.cfm?p=798
