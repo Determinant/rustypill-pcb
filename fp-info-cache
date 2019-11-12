@@ -1,4 +1,4 @@
-720299188791059
+720301785055059
 AT24C512C-SSHD-T
 SOIC127P600X175-8N
 
@@ -51077,7 +51077,7 @@ lib
 Connector
 0
 12
-12
+9
 lib
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
