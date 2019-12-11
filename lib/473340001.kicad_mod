@@ -1,9 +1,9 @@
-(module 473340001 (layer F.Cu) (tedit 5DCA0B71)
+(module 473340001 (layer F.Cu) (tedit 5DF125A8)
   (descr 47334-0001-2)
   (tags Connector)
   (attr smd)
   (fp_text reference J** (at 0 0) (layer F.SilkS)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
+    (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value 473340001 (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.254)))

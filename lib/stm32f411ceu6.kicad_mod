@@ -1,10 +1,10 @@
-(module QFN50P700X700X60-49N-D (layer F.Cu) (tedit 5DEF2A49)
+(module stm32f411ceu6 (layer F.Cu) (tedit 5DF124D6)
   (descr UFQFPN48_1)
   (tags "Integrated Circuit")
   (clearance 0.15)
   (attr smd)
-  (fp_text reference IC** (at 0 0) (layer F.SilkS)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
+  (fp_text reference IC** (at -4.8768 -4.6736) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value QFN50P700X700X60-49N-D (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.254)))
