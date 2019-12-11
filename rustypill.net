@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/ymf/work/2019_winter/rustypill/rustypill-pcb/rustypill.sch)
-    (date "Mon 09 Dec 2019 03:04:21 PM EST")
+    (date "Wed 11 Dec 2019 11:49:20 AM EST")
     (tool "Eeschema 5.1.5")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -31,7 +31,7 @@
       (tstamp 5DC0FBB0))
     (comp (ref U6)
       (value DS3231)
-      (footprint DS3231:SO16W)
+      (footprint lib:ds3231)
       (fields
         (field (name Field4) "Maxim Integrated")
         (field (name Field5) Unavailable)
@@ -43,7 +43,7 @@
       (tstamp 5DC2219D))
     (comp (ref U2)
       (value AT24C512C-SSHD-T)
-      (footprint AT24C512C-SSHD-T:SOIC127P600X175-8N)
+      (footprint lib:at24c512c-sshd-t)
       (datasheet "AT24C512C Series 512 Kb _64 K x 8_ 1.7 V I2C-Compatible Serial EEPROM - SOIC-8")
       (fields
         (field (name Field4) Microchip)
@@ -357,7 +357,7 @@
       (tstamp 5E29D2F8))
     (comp (ref U4)
       (value STM32F411CEUx)
-      (footprint STM32F411CEU6:QFN50P700X700X60-49N-D)
+      (footprint lib:stm32f411ceu6)
       (datasheet http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00115249.pdf)
       (libsource (lib MCU_ST_STM32F4) (part STM32F411CEUx) (description "ARM Cortex-M4 MCU, 512KB flash, 128KB RAM, 100MHz, 1.7-3.6V, 36 GPIO, UFQFPN-48"))
       (sheetpath (names /) (tstamps /))

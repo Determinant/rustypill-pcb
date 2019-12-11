@@ -1,8 +1,3 @@
 (fp_lib_table
   (lib (name lib)(type KiCad)(uri ${KIPRJMOD}/lib)(options "")(descr ""))
-  (lib (name AT24C512C-SSHD-T)(type Legacy)(uri ${KIPRJMOD}/lib/AT24C512C-SSHD-T.mod)(options "")(descr ""))
-  (lib (name DS3231)(type Legacy)(uri ${KIPRJMOD}/lib/DS3231.mod)(options "")(descr ""))
-  (lib (name STM32F103C8T6)(type Legacy)(uri ${KIPRJMOD}/lib/STM32F103C8T6.mod)(options "")(descr ""))
-  (lib (name STM32F411CEU6)(type Legacy)(uri ${KIPRJMOD}/lib/STM32F411CEU6.mod)(options "")(descr ""))
-  (lib (name stm32f411ceu6)(type KiCad)(uri ${KIPRJMOD}/lib/stm32f411ceu6.pretty)(options "")(descr ""))
 )
