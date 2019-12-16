@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/ymf/work/2019_winter/rustypill/rustypill-pcb/rustypill.sch)
-    (date "Wed 11 Dec 2019 03:32:54 PM EST")
+    (date "Sun 15 Dec 2019 08:57:24 PM EST")
     (tool "Eeschema 5.1.5")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
